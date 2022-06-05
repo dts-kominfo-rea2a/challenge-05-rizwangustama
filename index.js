@@ -8,11 +8,12 @@ const names = ["Halo", "Angel", "Nyoman", "Ketut", "Aisyah"];
 // ...
 
 const sort = (list, callback) => { 
+  sortList = callback(list);
   const result = [];
   for (let i = 0; i < list.length; i++) {
     result.push(`${i + 1}. ${list[i]}`);
   }
-  return callback(result);
+  return result;
 }
 
 const sorter = sort;
